@@ -4,20 +4,19 @@ import streamlit as st
 st.set_page_config(page_title="About ", page_icon="./about.png")
 
 
+st.write("""
+# Made by Murad Muzaffar
+""")
+
 st.markdown(
     """
-    Streamlit is an open-source app framework built specifically for
-    Machine Learning and Data Science projects.
-    **👈 Select a demo from the sidebar** to see some examples
-    of what Streamlit can do!
-    ### Want to learn more?
-    - Check out [streamlit.io](https://streamlit.io)
-    - Jump into our [documentation](https://docs.streamlit.io)
-    - Ask a question in our [community
-        forums](https://discuss.streamlit.io)
-    ### See more complex demos
-    - Use a neural net to [analyze the Udacity Self-driving Car Image
-        Dataset](https://github.com/streamlit/demo-self-driving)
-    - Explore a [New York City rideshare dataset](https://github.com/streamlit/demo-uber-nyc-pickups)
+    HR app measures employee satisfaction with the company through machine learning
+    **👈 Select a demo page from the sidebar** to see some examples
+    of what HR app can do!
+    ### Want to learn more about me?
+    - Check out github [github.com](https://github.com/muradmuzaffar/HR)
+    - Check out linkedin [linkedin](https://www.linkedin.com/in/murad-muzaffarov-0761a2204/)
+
+    
 """
 )

@@ -45,6 +45,13 @@ def user_input_features():
 
 
 input_df = user_input_features()
+
+st.write("""
+# User's response
+""")
+input_df
+
+
 hr_raw = pd.read_csv('HR_no_duplicate.csv')
 
 hr = hr_raw.drop(columns=['satisfaction_level'])
@@ -63,8 +70,6 @@ for col in encode:
 # df
 df = df[:1]
 
-df
-
 
 model = pickle.load(open('model.pkl', 'rb'))
 
@@ -73,7 +78,7 @@ prediction = model.predict(df)
 prediction_proba = model.predict_proba(df)
 
 
-st.subheader('Prediction')
+st.subheader('Satisfaction Level')
 st.write(prediction)
 
 st.subheader('Prediction Probability')
